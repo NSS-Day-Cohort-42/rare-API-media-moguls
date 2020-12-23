@@ -174,7 +174,7 @@ class RareUserSerializer(serializers.ModelSerializer):
 class CurrentRareUserSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for RareUser info in profile detail view"""
     posts = UsersPostsSerializer(many=True)
-
+    images = ImageSerializer(many=True)
     class Meta:
         model = RareUser
         fields = ("id", "bio", "is_staff", "images",
@@ -187,6 +187,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         serializers
     """
     rareuser = RareUserSerializer(many=False)
+    
     class Meta:
         model = get_user_model()
         fields = ('id', 'rareuser', 'username', "images", 'is_staff',

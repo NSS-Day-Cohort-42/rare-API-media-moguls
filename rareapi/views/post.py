@@ -12,6 +12,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rareapi.models import Post, RareUser, Category, PostTag
 from rareapi.views.category import CategorySerializer
+from rareapi.views.user import ImageSerializer
 
 class Posts(ViewSet):
     """docstrings"""
@@ -62,14 +63,16 @@ class Posts(ViewSet):
         posts = Post.objects.all()
         current_user = RareUser.objects.get(user=request.auth.user)
 
-        rareuser_id = self.request.query_params.get('rareuser_id', None)
+        author_id = self.request.query_params.get('author_id', None)
         category_id = self.request.query_params.get('category_id', None)
         subscribed = self.request.query_params.get('subscribed', None)
 
-        if rareuser_id is not None:
-            author = RareUser.objects.get(user=rareuser_id)
+        if author_id is not None:
+            # http://localhost:8000/posts?author_id=10
+            author = RareUser.objects.get(pk=author_id)
+
             posts_by_author = posts.filter(
-                rareuser=author, approved=True).order_by('-publication_date')
+                rareuser=author).order_by('-publication_date')
 
             serializer = PostSerializer(
                 posts_by_author, many=True, context={'request': request}
@@ -80,11 +83,15 @@ class Posts(ViewSet):
             )
 
         elif category_id is not None:
-            category = Category.objects.get(id=category_id)
+            # http://localhost:8000/posts?category_id=2
+            category = Category.objects.get(pk=category_id)
             posts = posts.filter(
                 category=category).order_by('-publication_date')
 
         elif subscribed is not None:
+            # show posts where the user is subscribed to the author
+            # http://localhost:8000/posts?subscribed=[FOLLOWER ID]
+            # http://localhost:8000/posts?subscribed=10
             subscribed_posts = posts.filter(
                 rareuser__subscribers__follower=current_user).order_by('-publication_date')
 
@@ -121,7 +128,7 @@ class Posts(ViewSet):
 
             post.is_user_author = None
             current_user = RareUser.objects.get(user=request.auth.user)
-            
+
             if post.rareuser == current_user:
                 post.is_user_author = True
             else:
@@ -217,9 +224,10 @@ class Posts(ViewSet):
 
 class AuthorSerializer(serializers.HyperlinkedModelSerializer):
     """Serializer for RareUser Info in a post"""
+    images = ImageSerializer
     class Meta:
         model = RareUser
-        fields = ('id', 'is_staff', 'email', 'full_name')
+        fields = ('id', 'is_staff', 'email', 'full_name', 'username', 'images')
 
 class PostSerializer(serializers.HyperlinkedModelSerializer):
     """Basic Serializer for single post"""
