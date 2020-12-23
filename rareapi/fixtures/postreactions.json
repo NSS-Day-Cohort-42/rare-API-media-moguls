@@ -49,7 +49,7 @@
         "pk": 6,
         "fields": {
             "user_id": 1,
-            "reaction_id": 1,
+            "reaction_id": 3,
             "post_id": 3
         }
     }

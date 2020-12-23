@@ -3,42 +3,301 @@
         "model": "rareapi.tag",
         "pk": 1,
         "fields": {
-            "label": "titansfan"
+            "label": "toad"
         }
     },
     {
         "model": "rareapi.tag",
         "pk": 2,
         "fields": {
-            "label": "ilovemydog"
+            "label": "dressrobes"
         }
     },
     {
         "model": "rareapi.tag",
         "pk": 3,
         "fields": {
-            "label": "sundayfunday"
+            "label": "yuleball"
         }
     },
     {
         "model": "rareapi.tag",
         "pk": 4,
         "fields": {
-            "label": "workflow"
+            "label": "muggles"
         }
     },
     {
         "model": "rareapi.tag",
         "pk": 5,
         "fields": {
-            "label": "nashville"
+            "label": "unicorn"
         }
     },
     {
         "model": "rareapi.tag",
         "pk": 6,
         "fields": {
-            "label": "data"
+            "label": "firstyears"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 7,
+        "fields": {
+            "label": "parseltongue"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 8,
+        "fields": {
+            "label": "mandrake"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 9,
+        "fields": {
+            "label": "charms"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 10,
+        "fields": {
+            "label": "potions"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 11,
+        "fields": {
+            "label": "divination"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 12,
+        "fields": {
+            "label": "herbology"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 13,
+        "fields": {
+            "label": "owl"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 14,
+        "fields": {
+            "label": "ravenclaw"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 15,
+        "fields": {
+            "label": "slytherin"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 16,
+        "fields": {
+            "label": "griffindor"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 17,
+        "fields": {
+            "label": "hufflepuff"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 18,
+        "fields": {
+            "label": "petrificustotalus"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 19,
+        "fields": {
+            "label": "wand"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 20,
+        "fields": {
+            "label": "quidditch"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 21,
+        "fields": {
+            "label": "hogwartsexpress"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 22,
+        "fields": {
+            "label": "stupid"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 23,
+        "fields": {
+            "label": "holidays"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 24,
+        "fields": {
+            "label": "centaur"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 25,
+        "fields": {
+            "label": "everyflavorbeans"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 26,
+        "fields": {
+            "label": "quill"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 27,
+        "fields": {
+            "label": "transfiguration"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 28,
+        "fields": {
+            "label": "broomstick"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 29,
+        "fields": {
+            "label": "floo"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 30,
+        "fields": {
+            "label": "polyjuice"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 31,
+        "fields": {
+            "label": "paranoid"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 32,
+        "fields": {
+            "label": "homesweethome"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 33,
+        "fields": {
+            "label": "forbiddenforest"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 34,
+        "fields": {
+            "label": "youknowwho"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 35,
+        "fields": {
+            "label": "werewolves"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 36,
+        "fields": {
+            "label": "winning"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 37,
+        "fields": {
+            "label": "moonbeam"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 38,
+        "fields": {
+            "label": "nimbustwothousand"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 39,
+        "fields": {
+            "label": "riddles"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 40,
+        "fields": {
+            "label": "lifeanddeath"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 41,
+        "fields": {
+            "label": "beasts"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 42,
+        "fields": {
+            "label": "snitch"
+        }
+    },
+    {
+        "model": "rareapi.tag",
+        "pk": 43,
+        "fields": {
+            "label": "jinx"
         }
     }
 ]

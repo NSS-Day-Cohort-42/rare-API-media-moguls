@@ -9,3 +9,4 @@ from .category import Categories
 from .user import Users
 from .reaction import Reactions
 from .subscription import Subscriptions
+from .profileimage import ProfileImages

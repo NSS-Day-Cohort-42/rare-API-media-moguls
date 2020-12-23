@@ -4,104 +4,174 @@ from django.http import HttpResponseServerError
 from django.core.exceptions import ValidationError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
+from rest_framework.decorators import action
 from rest_framework import serializers
 from rest_framework import status
 from rareapi.models import Subscription, RareUser
-from rest_framework.decorators import action
 
 class Subscriptions(ViewSet):
     """Rare subscriptions"""
 
     def list(self, request):
-        """Handle GET requests to get subscriptions by authed user; 
-        needed for listing all subscribed posts on home"""
+        """Handle GET requests to get all active subscriptions
+        for a given author
+        """
+        current_user = RareUser.objects.get(user=request.auth.user)
+        subscriptions = Subscription.objects.filter(ended_on__isnull=True)
+        author_id = self.request.query_params.get('author', None)
+        subscribed_to_author = self.request.query_params.get('followers', None)
 
-        subscriptions = Subscription.objects.all()
+        if author_id is not None:
+            author = RareUser.objects.get(user__id=author_id)
+            if author != current_user:
+                try:
+                    subscription = subscriptions.get(
+                        author=author, follower=current_user)
 
-        #filtering subscriptions by user
-        follower = RareUser.objects.get(user=request.auth.user)
+                    serializer = SubscribedToAuthorSerializer(
+                        subscription, many=False, context={'request': request}
+                    )
 
-        if follower is not None:
-            subscriptions = subscriptions.filter(follower_id=follower)
+                    return Response(
+                        serializer.data,
+                        status=status.HTTP_200_OK
+                    )
 
-        serializer = SubscriptionSerializer(
-            subscriptions, many=True, context={'request': request})
-        return Response(serializer.data)
+                except Subscription.DoesNotExist:
+                    return Response(
+                        {'message': 'You are not subscribed to this author.'},
+                            status=status.HTTP_422_UNPROCESSABLE_ENTITY
+                    )
+            elif author == current_user:
+                return Response(
+                    {'reason': 'Users cannot subscribe to their own profile.'},
+                    status=status.HTTP_422_UNPROCESSABLE_ENTITY
+                )
 
-    def create(self, request):
-        """Handle POST operations; 
-        will be used when user is on author profile and hits subscribe;
-        only info needed in request is author ID"""
+        elif subscribed_to_author is not None:
+            author = RareUser.objects.get(user__id=subscribed_to_author)
 
-        follower = RareUser.objects.get(user=request.auth.user)
-        author = RareUser.objects.get(pk=request.data["author_id"])
+            subscribers = subscriptions.filter(author=author, ended_on=None)
 
-        subscription = Subscription()
-        subscription.follower = follower
-        subscription.author = author
-
-        if follower != author:
-            try:
-                found_subscription = Subscription.objects.get(follower=follower, author=author, ended_on=None) 
-                return Response({"reason": "user is already subscribed to that author"}, status=status.HTTP_400_BAD_REQUEST)
-            except Subscription.DoesNotExist:
-                subscription.save()
-                serializer = SubscriptionSerializer(subscription, context={'request': request})
-                return Response(serializer.data)
-            except ValidationError as ex:
-                return Response({"reason": ex.message}, status=status.HTTP_400_BAD_REQUEST)
-        else:
-            return Response({"reason": "user cannot subscribe to their own posts"}, status=status.HTTP_400_BAD_REQUEST)
-
-    @action(methods=['get'], detail=False)
-    # Gets only active subscriptions (those without an ended_on) for the current user
-    def get_current_subscriptions(self, request):
-        subscriptions = Subscription.objects.all()
-        follower = RareUser.objects.get(user=request.auth.user)
-
-        if follower is not None:
-            subscriptions = subscriptions.filter(follower_id=follower, ended_on__isnull=True)
+            serializer = UsersSubscribersSerializer(
+                subscribers, many=True, context={'request': request})
+            return Response(
+                serializer.data,
+                status=status.HTTP_200_OK
+            )
 
         serializer = SubscriptionSerializer(
             subscriptions, many=True, context={'request': request})
-        return Response(serializer.data)
+        return Response(
+            serializer.data,
+            status=status.HTTP_200_OK
+        )
 
-    @action(methods=['patch'], detail=True)
+
+    @action(methods=['get', 'post', 'patch'], detail=True)
     # Adds an ended_on for an active subscription between a follower and author
-    def unsubscribe(self, request, pk=None):
-        subscription_obj = Subscription.objects.get(pk=pk)
+    def manage(self, request, pk):
+        """docstrings"""
 
-        subscription_obj.ended_on = datetime.datetime.now()
-        subscription_obj.save()
+        if request.method == "PATCH":
+            follower = RareUser.objects.get(user=request.auth.user)
+            author = RareUser.objects.get(pk=pk)
+
+            try:
+                subscription = Subscription.objects.get(author=author, follower=follower)
+
+                if subscription.ended_on is None:
+                    subscription.ended_on = datetime.datetime.now()
+                    subscription.save()
+
+                    return Response(
+                        {'message': 'unsubscribed'},
+                        status=status.HTTP_200_OK
+                    )
+
+                elif subscription.ended_on is not None:
+                    subscription.ended_on = None
+                    subscription.save()
+
+                    return Response(
+                        {'message': 'subscribed'},
+                        status=status.HTTP_200_OK
+                    )
+
+            except Subscription.DoesNotExist:
+
+                if follower != author:
+                    subscription = Subscription()
+                    subscription.follower = follower
+                    subscription.author = author
+
+                    try:
+                        subscription.save()
+
+                        serializer = SubscriptionSerializer(
+                            subscription,
+                            context={'request': request}
+                        )
+
+                        return Response(
+                            serializer.data,
+                            status=status.HTTP_201_CREATED
+                        )
+
+                    except ValidationError as ex:
+                        return Response(
+                            {"reason": ex.message},
+                            status=status.HTTP_400_BAD_REQUEST
+                        )
+                else:
+                    return Response(
+                        {"reason": "user cannot subscribe to their own posts"},
+                        status=status.HTTP_422_UNPROCESSABLE_ENTITY
+                    )
+
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-    @action(methods=['get'], detail=True)
-    # Checks whether a user has an active subscription to a given author ID
-    def get_single_current_subscription(self, request, pk=None):
-        follower = RareUser.objects.get(user=request.auth.user)
-        author = RareUser.objects.get(pk=pk)
-        try:
-            subscription = Subscription.objects.get(follower=follower, author=author, ended_on=None)
-            serializer = SubscriptionSerializer(
-                subscription, many=False, context={'request': request})
-            return Response(serializer.data)
-        except Subscription.DoesNotExist:
-            return Response({"message": "subscription not found"})
-class RareUserSerializer(serializers.ModelSerializer):
+class FollowerSerializer(serializers.ModelSerializer):
+    """JSON serializer for subscription follower and author related Django user"""
+    class Meta:
+        model = RareUser
+        fields = ('id', 'username', 'is_active',
+            'is_staff', 'email', 'full_name')
+
+class FollowerUsernameSerializer(serializers.ModelSerializer):
     """JSON serializer for subscription follower and author related Django user"""
     class Meta:
         model = RareUser
         fields = ('id', 'username')
 
+class AuthorSerializer(serializers.ModelSerializer):
+    """JSON serializer for subscription follower and author related Django user"""
+    class Meta:
+        model = RareUser
+        fields = ('id', 'username', 'is_active',
+            'is_staff', 'email', 'full_name')
+
 class SubscriptionSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for subscriptions"""
-    follower = RareUserSerializer(many=False)
-    author = RareUserSerializer(many=False)
-
+    follower = FollowerSerializer(many=False)
+    author = AuthorSerializer(many=False)
     class Meta:
         model = Subscription
-        url = serializers.HyperlinkedIdentityField(
-            view_name='subscription',
-            lookup_field='id'
-        )
-        fields = ('id', 'follower', 'author', 'created_on', 'ended_on')
+        fields = ('id', 'follower', 'author',
+            'created_on', 'ended_on')
+
+class SubscribedToAuthorSerializer(serializers.HyperlinkedModelSerializer):
+    """JSON serializer for subscriptions"""
+    author = AuthorSerializer(many=False)
+    follower = FollowerUsernameSerializer(many=False)
+    class Meta:
+        model = Subscription
+        fields = ('id', 'author', 'created_on',
+        'follower', 'ended_on')
+
+class UsersSubscribersSerializer(serializers.HyperlinkedModelSerializer):
+    """JSON serializer for subscriptions"""
+    follower = FollowerSerializer(many=False)
+    class Meta:
+        model = Subscription
+        fields = ('id', 'follower', 'author_username', 'created_on', 'ended_on')

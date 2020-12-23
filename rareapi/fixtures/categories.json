@@ -10,21 +10,133 @@
         "model": "rareapi.category",
         "pk": 2,
         "fields": {
-            "label": "pups"
+            "label": "Spells"
         }
     },
     {
         "model": "rareapi.category",
         "pk": 3,
         "fields": {
-            "label": "Brendan Fraser"
+            "label": "Magical Creatures"
         }
     },
     {
         "model": "rareapi.category",
         "pk": 4,
         "fields": {
-            "label": "CMON DJANGO CMON MONICA"
+            "label": "Dumbledore's Army"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 5,
+        "fields": {
+            "label": "Art"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 6,
+        "fields": {
+            "label": "Books"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 7,
+        "fields": {
+            "label": "School"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 8,
+        "fields": {
+            "label": "Pranks"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 9,
+        "fields": {
+            "label": "Ministry Of Magic"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 10,
+        "fields": {
+            "label": "Order Of The Phoenix"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 11,
+        "fields": {
+            "label": "Music"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 12,
+        "fields": {
+            "label": "Culture"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 13,
+        "fields": {
+            "label": "Language"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 14,
+        "fields": {
+            "label": "Travel"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 15,
+        "fields": {
+            "label": "Fashion"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 16,
+        "fields": {
+            "label": "Pets"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 17,
+        "fields": {
+            "label": "Forbidden Forest"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 18,
+        "fields": {
+            "label": "Dark Magic"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 19,
+        "fields": {
+            "label": "Wandlore"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 20,
+        "fields": {
+            "label": "The Triwizard Tournament"
         }
     }
 ]

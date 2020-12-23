@@ -4,15 +4,15 @@
         "pk": 1,
         "fields": {
             "post_id": 1,
-            "tag_id": 1
+            "tag_id": 31
         }
     },
     {
         "model": "rareapi.posttag",
         "pk": 2,
         "fields": {
-            "post_id": 3,
-            "tag_id": 6
+            "post_id": 1,
+            "tag_id": 32
         }
     },
     {
@@ -20,7 +20,7 @@
         "pk": 3,
         "fields": {
             "post_id": 1,
-            "tag_id": 2
+            "tag_id": 4
         }
     },
     {
@@ -28,7 +28,7 @@
         "pk": 4,
         "fields": {
             "post_id": 2,
-            "tag_id": 3
+            "tag_id": 33
         }
     },
     {
@@ -36,15 +36,828 @@
         "pk": 5,
         "fields": {
             "post_id": 2,
-            "tag_id": 4
+            "tag_id": 5
         }
     },
     {
         "model": "rareapi.posttag",
         "pk": 6,
         "fields": {
+            "post_id": 2,
+            "tag_id": 34
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 7,
+        "fields": {
             "post_id": 3,
+            "tag_id": 20
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 8,
+        "fields": {
+            "post_id": 3,
+            "tag_id": 35
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 9,
+        "fields": {
+            "post_id": 3,
+            "tag_id": 16
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 10,
+        "fields": {
+            "post_id": 4,
+            "tag_id": 16
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 11,
+        "fields": {
+            "post_id": 4,
+            "tag_id": 15
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 12,
+        "fields": {
+            "post_id": 4,
+            "tag_id": 36
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 13,
+        "fields": {
+            "post_id": 5,
+            "tag_id": 23
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 14,
+        "fields": {
+            "post_id": 5,
+            "tag_id": 25
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 15,
+        "fields": {
+            "post_id": 5,
+            "tag_id": 21
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 16,
+        "fields": {
+            "post_id": 6,
+            "tag_id": 8
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 17,
+        "fields": {
+            "post_id": 6,
+            "tag_id": 1
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 18,
+        "fields": {
+            "post_id": 6,
+            "tag_id": 20
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 19,
+        "fields": {
+            "post_id": 7,
+            "tag_id": 6
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 20,
+        "fields": {
+            "post_id": 7,
+            "tag_id": 18
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 21,
+        "fields": {
+            "post_id": 7,
+            "tag_id": 22
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 22,
+        "fields": {
+            "post_id": 8,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 23,
+        "fields": {
+            "post_id": 8,
+            "tag_id": 10
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 24,
+        "fields": {
+            "post_id": 8,
+            "tag_id": 37
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 25,
+        "fields": {
+            "post_id": 9,
+            "tag_id": 20
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 26,
+        "fields": {
+            "post_id": 9,
+            "tag_id": 28
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 27,
+        "fields": {
+            "post_id": 9,
+            "tag_id": 38
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 28,
+        "fields": {
+            "post_id": 10,
+            "tag_id": 39
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 29,
+        "fields": {
+            "post_id": 10,
+            "tag_id": 40
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 30,
+        "fields": {
+            "post_id": 10,
             "tag_id": 5
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 31,
+        "fields": {
+            "post_id": 11,
+            "tag_id": 41
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 32,
+        "fields": {
+            "post_id": 11,
+            "tag_id": 20
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 33,
+        "fields": {
+            "post_id": 11,
+            "tag_id": 17
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 34,
+        "fields": {
+            "post_id": 12,
+            "tag_id": 43
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 35,
+        "fields": {
+            "post_id": 12,
+            "tag_id": 42
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 36,
+        "fields": {
+            "post_id": 12,
+            "tag_id": 28
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 37,
+        "fields": {
+            "post_id": 13,
+            "tag_id": 24
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 38,
+        "fields": {
+            "post_id": 13,
+            "tag_id": 28
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 39,
+        "fields": {
+            "post_id": 13,
+            "tag_id": 20
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 40,
+        "fields": {
+            "post_id": 14,
+            "tag_id": 35
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 41,
+        "fields": {
+            "post_id": 14,
+            "tag_id": 38
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 42,
+        "fields": {
+            "post_id": 14,
+            "tag_id": 16
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 43,
+        "fields": {
+            "post_id": 15,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 44,
+        "fields": {
+            "post_id": 15,
+            "tag_id": 3
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 45,
+        "fields": {
+            "post_id": 15,
+            "tag_id": 7
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 46,
+        "fields": {
+            "post_id": 16,
+            "tag_id": 14
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 47,
+        "fields": {
+            "post_id": 16,
+            "tag_id": 12
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 48,
+        "fields": {
+            "post_id": 16,
+            "tag_id": 13
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 49,
+        "fields": {
+            "post_id": 17,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 50,
+        "fields": {
+            "post_id": 17,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 51,
+        "fields": {
+            "post_id": 17,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 52,
+        "fields": {
+            "post_id": 18,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 53,
+        "fields": {
+            "post_id": 18,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 54,
+        "fields": {
+            "post_id": 18,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 55,
+        "fields": {
+            "post_id": 19,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 56,
+        "fields": {
+            "post_id": 19,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 57,
+        "fields": {
+            "post_id": 19,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 58,
+        "fields": {
+            "post_id": 20,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 59,
+        "fields": {
+            "post_id": 20,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 60,
+        "fields": {
+            "post_id": 20,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 61,
+        "fields": {
+            "post_id": 21,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 62,
+        "fields": {
+            "post_id": 21,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 63,
+        "fields": {
+            "post_id": 21,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 64,
+        "fields": {
+            "post_id": 22,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 65,
+        "fields": {
+            "post_id": 22,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 66,
+        "fields": {
+            "post_id": 22,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 67,
+        "fields": {
+            "post_id": 23,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 68,
+        "fields": {
+            "post_id": 23,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 69,
+        "fields": {
+            "post_id": 23,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 70,
+        "fields": {
+            "post_id": 24,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 71,
+        "fields": {
+            "post_id": 24,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 72,
+        "fields": {
+            "post_id": 24,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 73,
+        "fields": {
+            "post_id": 25,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 74,
+        "fields": {
+            "post_id": 25,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 75,
+        "fields": {
+            "post_id": 25,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 76,
+        "fields": {
+            "post_id": 26,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 77,
+        "fields": {
+            "post_id": 26,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 78,
+        "fields": {
+            "post_id": 26,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 79,
+        "fields": {
+            "post_id": 27,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 80,
+        "fields": {
+            "post_id": 27,
+            "tag_id": 4
+        }
+    }, {
+        "model": "rareapi.posttag",
+        "pk": 81,
+        "fields": {
+            "post_id": 27,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 82,
+        "fields": {
+            "post_id": 28,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 83,
+        "fields": {
+            "post_id": 28,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 84,
+        "fields": {
+            "post_id": 28,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 85,
+        "fields": {
+            "post_id": 29,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 86,
+        "fields": {
+            "post_id": 29,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 87,
+        "fields": {
+            "post_id": 29,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 88,
+        "fields": {
+            "post_id": 30,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 89,
+        "fields": {
+            "post_id": 30,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 90,
+        "fields": {
+            "post_id": 30,
+            "tag_id": 4
+        }
+    }, {
+        "model": "rareapi.posttag",
+        "pk": 91,
+        "fields": {
+            "post_id": 31,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 92,
+        "fields": {
+            "post_id": 31,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 93,
+        "fields": {
+            "post_id": 31,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 94,
+        "fields": {
+            "post_id": 32,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 95,
+        "fields": {
+            "post_id": 32,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 96,
+        "fields": {
+            "post_id": 32,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 97,
+        "fields": {
+            "post_id": 33,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 98,
+        "fields": {
+            "post_id": 33,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 99,
+        "fields": {
+            "post_id": 33,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 100,
+        "fields": {
+            "post_id": 34,
+            "tag_id": 4
+        }
+    }, {
+        "model": "rareapi.posttag",
+        "pk": 101,
+        "fields": {
+            "post_id": 34,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 102,
+        "fields": {
+            "post_id": 34,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 103,
+        "fields": {
+            "post_id": 35,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 104,
+        "fields": {
+            "post_id": 35,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 105,
+        "fields": {
+            "post_id": 35,
+            "tag_id": 2
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 106,
+        "fields": {
+            "post_id": 36,
+            "tag_id": 19
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 107,
+        "fields": {
+            "post_id": 36,
+            "tag_id": 4
+        }
+    },
+    {
+        "model": "rareapi.posttag",
+        "pk": 108,
+        "fields": {
+            "post_id": 36,
+            "tag_id": 2
         }
     }
 ]

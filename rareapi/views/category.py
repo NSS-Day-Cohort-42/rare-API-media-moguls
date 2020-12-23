@@ -1,11 +1,11 @@
 """View module for handling requests about categories"""
 from django.http import HttpResponseServerError
+from django.core.exceptions import ValidationError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from rareapi.models import Category, RareUser
-
+from rareapi.models import Category
 
 class Categories(ViewSet):
     """Rare categories"""
@@ -68,19 +68,14 @@ class Categories(ViewSet):
 
     def update(self, request, pk=None):
         """Handle PUT requests for Categories"""
-
         category = Category.objects.get(pk=pk)
         category.label = request.data["label"]
         category.save()
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-
-"""Basic Serializer for single category"""
 class CategorySerializer(serializers.ModelSerializer):
+    """Basic Serializer for single category"""
     class Meta:
         model = Category
         fields = ('id', 'label')
-
-
-

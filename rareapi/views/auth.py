@@ -1,13 +1,9 @@
 """View module for handling authentication and new user registration"""
 import json
-import datetime
-import uuid
-import base64
 from django.http import HttpResponse
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
-from django.core.files.base import ContentFile
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 from rareapi.models import RareUser
@@ -31,7 +27,6 @@ def login_user(request):
         # If authentication was successful, respond with true and the users token
         if authenticated_user is not None:
             token = Token.objects.get(user=authenticated_user)
-            rare_user = RareUser.objects.get(user=authenticated_user)
             data = json.dumps({"valid": True, "token": token.key})
             return HttpResponse(data, content_type='application/json')
 
@@ -60,15 +55,12 @@ def register_user(request):
         is_active=True,
         is_staff=False
     )
-    format, imgstr = req_body["profile_image_url"].split(';base64,')
-    ext = format.split('/')[-1]
-    data = ContentFile(base64.b64decode(imgstr), name=f'{req_body["email"]}-{uuid.uuid4()}.{ext}')
 
-    #rare_user has a property `user` which makes all `user` properties accessible through the rare_user
+    #rare_user has a property `user` which makes all `user` properties
+    # accessible through the rare_user
     rare_user = RareUser.objects.create(
         bio=req_body['bio'],
-        user=new_user,
-        profile_image_url = data
+        user=new_user
     )
 
     # save it all to the db

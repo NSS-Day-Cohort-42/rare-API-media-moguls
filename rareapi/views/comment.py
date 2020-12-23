@@ -39,7 +39,7 @@ class Comments(ViewSet):
             comment = Comment.objects.get(pk=pk)
             serializer = CommentSerializer(comment, context={'request': request})
             return Response(serializer.data)
-        except Exception:
+        except Exception as ex:
             return HttpResponseServerError(ex)
 
     def list(self, request):
@@ -81,7 +81,7 @@ class Comments(ViewSet):
         comment.author = author
         comment.content = request.data["content"]
         comment.subject = request.data["subject"]
-        
+
         comment.save()
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)

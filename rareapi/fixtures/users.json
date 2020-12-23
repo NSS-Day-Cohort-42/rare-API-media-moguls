@@ -3,16 +3,16 @@
         "model": "auth.user",
         "pk": 1,
         "fields": {
-            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "password": "pbkdf2_sha256$216000$QEgwUbyC5AqQ$bpOUIQXfOZk+8niiV00+XY6TDxj46S5Otyq5B+hV5l0=",
             "last_login": null,
             "is_superuser": false,
-            "username": "marymogul",
-            "first_name": "Mary",
-            "last_name": "Mogul",
-            "email": "mary@mogul.com",
+            "username": "sortinghat",
+            "first_name": "Sorting",
+            "last_name": "Hat",
+            "email": "sorting@hat.com",
             "is_staff": true,
             "is_active": true,
-            "date_joined": "2020-08-28T14:51:39.989Z",
+            "date_joined": "2019-08-28T14:51:39.989Z",
             "groups": [],
             "user_permissions": []
         }
@@ -21,16 +21,16 @@
         "model": "auth.user",
         "pk": 2,
         "fields": {
-            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I1",
+            "password": "pbkdf2_sha256$216000$wD33318KvZuY$JuMBhFJzYrUHwG2BkpppJJI6dGGbXECnna4Y5BJznzk=",
             "last_login": null,
             "is_superuser": false,
-            "username": "theocanread",
-            "first_name": "Theo",
-            "last_name": "Daly",
-            "email": "theo@daly.com",
+            "username": "hermionegranger",
+            "first_name": "Hermione",
+            "last_name": "Granger",
+            "email": "hermione@granger.com",
             "is_staff": false,
             "is_active": true,
-            "date_joined": "2020-08-28T14:51:39.989Z",
+            "date_joined": "2019-09-28T14:51:39.989Z",
             "groups": [],
             "user_permissions": []
         }
@@ -39,16 +39,142 @@
         "model": "auth.user",
         "pk": 3,
         "fields": {
-            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7vkdowna;453687sd",
+            "password": "pbkdf2_sha256$216000$YrcotXPZqS3z$TSeQmqQfRW7azSvd62Wg9KTwlXsJLXCaEv5BVGJ/7cI=",
             "last_login": null,
             "is_superuser": false,
-            "username": "taternoodles",
-            "first_name": "Erica",
-            "last_name": "Nobles",
-            "email": "erica@nobles.com",
+            "username": "dracomalfoy",
+            "first_name": "Draco",
+            "last_name": "Malfoy",
+            "email": "draco@malfoy.com",
             "is_staff": false,
-            "is_active": false,
-            "date_joined": "2020-08-28T14:51:39.989Z",
+            "is_active": true,
+            "date_joined": "2019-07-28T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$VQc8ggf8dI1n$nzXxMNDvXpmzqL9i3Gqu8G4707LlmDo2Tg2Aw1oj7Sc=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "ronweasley",
+            "first_name": "Ron",
+            "last_name": "Weasley",
+            "email": "ron@weasley.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-07-29T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qetqJ8AXejcu$4/4ZtSMqHVFxQpxffWRNq2y2VmDfJmZX0e26hAVx//c=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "severussnape",
+            "first_name": "Severus",
+            "last_name": "Snape",
+            "email": "severus@snape.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-07-25T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$16n1ZMvMZy5o$J82xRrt+WrPeQwkhjY3RL58EFeP2cOvEdE4S/vlj/Ys=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "lunalovegood",
+            "first_name": "Luna",
+            "last_name": "Lovegood",
+            "email": "luna@lovegood.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-08-15T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$JGDtvsnRERXu$dUT5SGw+pmsi+7zzr2b0rmzx29LC5Kh7PugL2VX0Qp0=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "nevillelongbottom",
+            "first_name": "Neville",
+            "last_name": "Longbottom",
+            "email": "neville@longbottom.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-09-05T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$f4FDDDgFUzGv$2zudRuOs7C4MIJdPwyNes9KFrF32V6zCYFKkX6NTFeI=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "rubeushagrid",
+            "first_name": "Rubeus",
+            "last_name": "Hagrid",
+            "email": "rubeus@hagrid.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2019-10-04T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 9,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$ew1McoZX5EBA$ddvunozyIh22COTbo90mG/jBYmsKq/3oJxF2YgtgSB0=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "voldermort",
+            "first_name": "Tom",
+            "last_name": "Riddle",
+            "email": "tom@riddle.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-11-04T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$5eoZ99YZvEfG$8ATWOLUSnqeaRkBFTSHZ4dx78kn2WnGGAdrKueChJ7k=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "harrypotter",
+            "first_name": "Harry",
+            "last_name": "Potter",
+            "email": "harry@potter.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2019-10-10T14:51:39.989Z",
             "groups": [],
             "user_permissions": []
         }

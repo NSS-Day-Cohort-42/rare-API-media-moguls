@@ -15,3 +15,4 @@ python manage.py loaddata comments
 python manage.py loaddata subscriptions
 python manage.py loaddata reactions
 python manage.py loaddata postreactions
+python manage.py loaddata profileimages

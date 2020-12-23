@@ -3,27 +3,80 @@
         "model": "rareapi.RareUser",
         "pk": 1,
         "fields": {
-            "bio": "Internationally acclaimed scuba instructor, radio dj personality, and mid-century modern sofa collector, Mary Mogul is often referred to as 'Awesome', 'Super Fantastic', and 'Great'. Her talk show 'Mary The Mogul' ran from 2019 to 2020 and made history by becoming the most 'wow' program of its kind ever to be aired, and the most 'woah' program of its kind ever to be cancelled. With a net worth of $3.1 gazillion, Forbey Parker ranked her at the top of their list of the world’s kajillionaires.",
-            "user": 1,
-            "profile_image_url": ""
+            "bio": "Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.",
+            "user": 1
         }
     },
     {
         "model": "rareapi.RareUser",
         "pk": 2,
         "fields": {
-            "bio": "World renowned book enthusiast, instantgram influencer, and ticktockticktockticktock kween Theo Daly began building her empire on the popular social media platform SnapCrackleChat in 2001. With a net worth of $8.1 bazillion, Forbey Parker ranked her somewhere in the middle of their list of the world’s kajillionaires.",
-            "user": 2,
-            "profile_image_url": ""
+            "bio": "Red hair crookshanks bludger Marauder’s Map Prongs sunshine daisies butter mellow Ludo Bagman. Beaters gobbledegook N.E.W.T., Honeydukes eriseD inferi Wormtail. Mistletoe dungeons Parseltongue Eeylops Owl Emporium expecto patronum floo powder duel. Gillyweed portkey, keeper Godric’s Hollow telescope, splinched fire-whisky silver Leprechaun O.W.L. stroke the spine. Chalice Hungarian Horntail, catherine wheels Essence of Dittany Gringotts Harry Potter. Prophecies Yaxley green eyes Remembrall horcrux hand of the servant. Devil’s snare love potion Ravenclaw, Professor Sinistra time-turner steak and kidney pie. Cabbage Daily Prophet letters from no one Dervish and Banges leg.",
+            "user": 2
         }
     },
     {
         "model": "rareapi.RareUser",
         "pk": 3,
         "fields": {
-            "bio": "Mega superstar Erica Nobles became insanely famous and wealthy by accident after posting a really funny video on the social media app Vinyard, before the app was removed from existence a few years ago. With a net worth of $1.1 zillion, Forbey Parker ranked her somewhere at the bottom of their list of the world’s kajillionaires.",
-            "user": 3,
-            "profile_image_url": ""
+            "bio": "Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus, suck his soul Muggle-Born large order of drills the trace. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.",
+            "user": 3
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 4,
+        "fields": {
+            "bio": "Charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.",
+            "user": 4
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 5,
+        "fields": {
+            "bio": "Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.",
+            "user": 5
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 6,
+        "fields": {
+            "bio": "Squashy armchairs dirt on your nose brass scales crush the Sopophorous bean with flat side of silver dagger, releases juice better than cutting. Full moon Whomping Willow three turns should do it lemon drops. Locomotor trunks owl treats that will be 50 points, Mr. Potter. Witch Weekly, he will rise again and he will come for us, headmaster Erumpent horn. Fenrir Grayback horseless carriages ‘zis is a chance many would die for!",
+            "user": 6
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 7,
+        "fields": {
+            "bio": "Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed. Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.",
+            "user": 7
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 8,
+        "fields": {
+            "bio": "Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus, suck his soul Muggle-Born large order of drills the trace. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.",
+            "user": 8
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 9,
+        "fields": {
+            "bio": "Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.",
+            "user": 9
+        }
+    },
+    {
+        "model": "rareapi.RareUser",
+        "pk": 10,
+        "fields": {
+            "bio": "Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and Parvati Sorting Hat Minister of Magic blue turban remember my last.",
+            "user": 10
         }
     }
 ]

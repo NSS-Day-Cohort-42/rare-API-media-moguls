@@ -13,8 +13,8 @@
         "model": "rareapi.subscription",
         "pk": 2,
         "fields": {
-            "follower_id": 2,
-            "author_id": 1,
+            "follower_id": 1,
+            "author_id": 3,
             "created_on": "2020-11-09T16:25:37+00:00",
             "ended_on": "2020-12-10T12:35:37+00:00"
         }
@@ -23,8 +23,8 @@
         "model": "rareapi.subscription",
         "pk": 3,
         "fields": {
-            "follower_id": 2,
-            "author_id": 1,
+            "follower_id": 1,
+            "author_id": 4,
             "created_on": "2020-12-13T13:19:37+00:00",
             "ended_on": null
         }
@@ -34,7 +34,7 @@
         "pk": 4,
         "fields": {
             "follower_id": 1,
-            "author_id": 2,
+            "author_id": 5,
             "created_on": "2020-12-13T13:20:37+00:00",
             "ended_on": null
         }
@@ -44,8 +44,578 @@
         "pk": 5,
         "fields": {
             "follower_id": 1,
-            "author_id": 3,
+            "author_id": 6,
             "created_on": "2020-10-13T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 6,
+        "fields": {
+            "follower_id": 1,
+            "author_id": 7,
+            "created_on": "2020-10-14T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 7,
+        "fields": {
+            "follower_id": 1,
+            "author_id": 8,
+            "created_on": "2020-10-15T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 8,
+        "fields": {
+            "follower_id": 1,
+            "author_id": 9,
+            "created_on": "2020-10-16T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 9,
+        "fields": {
+            "follower_id": 1,
+            "author_id": 10,
+            "created_on": "2020-10-17T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 10,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 5,
+            "created_on": "2020-10-18T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 11,
+        "fields": {
+            "follower_id": 1,
+            "author_id": 3,
+            "created_on": "2020-10-19T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 12,
+        "fields": {
+            "follower_id": 1,
+            "author_id": 3,
+            "created_on": "2020-10-20T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 13,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 1,
+            "created_on": "2020-10-21T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 14,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 3,
+            "created_on": "2020-10-22T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 15,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 4,
+            "created_on": "2020-10-23T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 16,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 10,
+            "created_on": "2020-10-24T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 17,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 8,
+            "created_on": "2020-10-25T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 18,
+        "fields": {
+            "follower_id": 2,
+            "author_id": 6,
+            "created_on": "2020-10-26T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 19,
+        "fields": {
+            "follower_id": 3,
+            "author_id": 5,
+            "created_on": "2020-10-27T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 20,
+        "fields": {
+            "follower_id": 3,
+            "author_id": 9,
+            "created_on": "2020-10-28T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 21,
+        "fields": {
+            "follower_id": 4,
+            "author_id": 10,
+            "created_on": "2020-10-29T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 22,
+        "fields": {
+            "follower_id": 4,
+            "author_id": 1,
+            "created_on": "2020-10-30T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 23,
+        "fields": {
+            "follower_id": 4,
+            "author_id": 2,
+            "created_on": "2020-10-31T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 24,
+        "fields": {
+            "follower_id": 4,
+            "author_id": 8,
+            "created_on": "2020-11-01T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 25,
+        "fields": {
+            "follower_id": 4,
+            "author_id": 7,
+            "created_on": "2020-11-02T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 26,
+        "fields": {
+            "follower_id": 5,
+            "author_id": 9,
+            "created_on": "2020-11-03T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 27,
+        "fields": {
+            "follower_id": 5,
+            "author_id": 10,
+            "created_on": "2020-11-04T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 28,
+        "fields": {
+            "follower_id": 5,
+            "author_id": 1,
+            "created_on": "2020-11-05T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 29,
+        "fields": {
+            "follower_id": 5,
+            "author_id": 2,
+            "created_on": "2020-11-06T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 30,
+        "fields": {
+            "follower_id": 5,
+            "author_id": 4,
+            "created_on": "2020-11-07T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 31,
+        "fields": {
+            "follower_id": 6,
+            "author_id": 1,
+            "created_on": "2020-11-08T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 32,
+        "fields": {
+            "follower_id": 6,
+            "author_id": 2,
+            "created_on": "2020-11-09T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 33,
+        "fields": {
+            "follower_id": 6,
+            "author_id": 4,
+            "created_on": "2020-11-10T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 34,
+        "fields": {
+            "follower_id": 6,
+            "author_id": 10,
+            "created_on": "2020-11-11T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 35,
+        "fields": {
+            "follower_id": 7,
+            "author_id": 1,
+            "created_on": "2020-11-12T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 36,
+        "fields": {
+            "follower_id": 7,
+            "author_id": 2,
+            "created_on": "2020-11-13T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 37,
+        "fields": {
+            "follower_id": 7,
+            "author_id": 4,
+            "created_on": "2020-11-14T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 38,
+        "fields": {
+            "follower_id": 7,
+            "author_id": 6,
+            "created_on": "2020-11-15T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 39,
+        "fields": {
+            "follower_id": 7,
+            "author_id": 10,
+            "created_on": "2020-11-16T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 40,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 1,
+            "created_on": "2020-11-17T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 41,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 1,
+            "created_on": "2020-11-18T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 42,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 2,
+            "created_on": "2020-11-19T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 43,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 4,
+            "created_on": "2020-11-20T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 44,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 10,
+            "created_on": "2020-09-01T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 45,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 7,
+            "created_on": "2020-09-02T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 46,
+        "fields": {
+            "follower_id": 8,
+            "author_id": 6,
+            "created_on": "2020-09-03T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 47,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 1,
+            "created_on": "2020-09-04T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 48,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 2,
+            "created_on": "2020-09-05T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 49,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 3,
+            "created_on": "2020-09-06T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 50,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 4,
+            "created_on": "2020-09-07T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 51,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 5,
+            "created_on": "2020-09-08T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 52,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 6,
+            "created_on": "2020-09-09T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 53,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 7,
+            "created_on": "2020-09-10T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 54,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 8,
+            "created_on": "2020-09-11T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 55,
+        "fields": {
+            "follower_id": 9,
+            "author_id": 10,
+            "created_on": "2020-09-12T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 56,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 1,
+            "created_on": "2020-09-13T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 57,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 2,
+            "created_on": "2020-09-14T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 58,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 3,
+            "created_on": "2020-09-15T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 59,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 4,
+            "created_on": "2020-09-16T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 60,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 6,
+            "created_on": "2020-09-17T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 61,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 7,
+            "created_on": "2020-09-18T13:23:37+00:00",
+            "ended_on": null
+        }
+    },
+    {
+        "model": "rareapi.subscription",
+        "pk": 62,
+        "fields": {
+            "follower_id": 10,
+            "author_id": 8,
+            "created_on": "2020-09-19T13:23:37+00:00",
             "ended_on": null
         }
     }
